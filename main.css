@@ -1,0 +1,156 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte para títulos e botões */
+header, section h2, section h3, form button {
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #0d1b4c;
+    color: white;
+    padding: 20px 0;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Seção Sobre */
+#sobre .container {
+    display: flex;
+    align-items: flex-start;
+    padding: 40px 0;
+    color: #0d1b4c;
+}
+
+#sobre img {
+    margin-right: 40px;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+#sobre h2 {
+    margin-bottom: 16px;
+}
+
+#sobre p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.logos img {
+    height: 32px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+/* Seção Contato */
+#contato .container {
+    display: block;
+    padding: 40px 0;
+    color: #0d1b4c;
+}
+
+#contato h2 {
+    margin-bottom: 20px;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.contact-methods div {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.contact-methods div:last-child {
+    margin-right: 0;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+    font-family: Arial, sans-serif;
+}
+
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+form button {
+    background-color: #0d1b4c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #1e2f6b;
+}
+
+form input:focus,
+form textarea:focus {
+    outline-color: #ff0000;
+}
+
+.contact-methods ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.contact-methods ul li {
+    margin-right: 10px;
+}
+
+.contact-methods ul li img {
+    height: 24px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #0d1b4c;
+    color: white;
+    text-align: center;
+    padding: 16px 0;
+    font-size: 14px;
+    margin-top: 40px;
+}
